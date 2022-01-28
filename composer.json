@@ -1,0 +1,33 @@
+{
+	"name": "rits-tecnologia/laravel-model-uuid",
+	"description": "Laravel Model UUID",
+	"keywords": ["laravel", "model", "uuid"],
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Juciano Araujo",
+			"email": "jucianoaraujo@rits.com.br"
+		}
+	],
+    "scripts": {
+        "test": "./vendor/bin/testbench package:test"
+    },
+    "autoload": {
+		"psr-4": {
+			"Rits\\Database\\Support\\": "src/"
+		}
+	},
+	"autoload-dev": {
+		"psr-4": {
+			"Rits\\Database\\Support\\Tests\\": "tests"
+		}
+	},
+	"require": {
+		"illuminate/support": "^8.0"
+	},
+	"require-dev": {
+		"illuminate/database": "^8.0",
+		"orchestra/testbench": "^6.24",
+		"nunomaduro/collision": "^5.10"
+	}
+}
